@@ -3,32 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"/>
+          content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=1.0"/>
     <title>应征入伍</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            height: 100%;
+        }
+
+        body {
+            color: white;
+            background-image: url("../res/bg2.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
         h1 {
             text-align: center;
-            margin: 2rem auto;
+            margin: 2rem auto 1.5rem;
             font-size: 1.5rem;
         }
 
+        .arrow_fa {
+            margin-top: 0.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .rectangle {
+            width: 0.5rem;
+            height: 1rem;
+            background-color: white;
+            margin: 0 auto;
+        }
+
+        .to_bottom {
+            margin: 0 auto;
+            width: 0;
+            height: 0;
+            border-top: 1.2rem solid white;
+            border-left: 0.5rem solid transparent;
+            border-right: 0.5rem solid transparent;
+        }
+
         .container {
-            font-size: 1rem;
+            font-size: 1.1rem;
             font-family: "Fira Code", serif;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            height: 12rem;
+            height: 100%;
         }
 
         .container > .item {
-            border-radius: 50%;
-            margin-top: 0.8rem;
-            background-color: #abc1d6;
+            margin-top: 0.5rem;
         }
 
         .container > .item > p {
             text-align: center;
+        }
+
+        .container > .item > p > a {
+            color: inherit;
         }
     </style>
 </head>
@@ -36,10 +78,18 @@
 <h1>应征入伍流程</h1>
 <div class="container">
     <div class="item">
-        <p>1、应征入伍学生在全国征兵网站下载《大学生预征对象登记表》</p>
+        <p>1、应征入伍学生在<a href="https://www.gfbzb.gov.cn/" target="_blank">全国征兵网站</a>下载《大学生预征对象登记表》</p>
+    </div>
+    <div class="arrow_fa">
+        <div class="rectangle"></div>
+        <div class="to_bottom"></div>
     </div>
     <div class="item">
         <p>2、应征入伍学生可至724服务中心咨询登记表填写协助</p>
+    </div>
+    <div class="arrow_fa">
+        <div class="rectangle"></div>
+        <div class="to_bottom"></div>
     </div>
     <div class="item">
         <p>3、应征入伍学生将填写无误的登记表交至游仙校区保卫室张恒华老师处进行盖章</p>

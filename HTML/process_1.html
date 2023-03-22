@@ -3,35 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"/>
+          content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=1.0"/>
     <title>办理学生证</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            height: 100%;
+        }
+
         body {
             color: white;
-            background-image: url("../res/bg1.jpg");
+            background-image: url("../res/bg2.jpg");
             background-repeat: no-repeat;
             background-size: cover;
+            background-position: center;
+        }
+
+        .arrow_fa {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-top: 0.5rem;
+        }
+
+        .rectangle {
+            width: 0.5rem;
+            height: 1rem;
+            background-color: white;
+            margin: 0 auto;
+        }
+
+        .to_bottom {
+            margin: 0 auto;
+            width: 0;
+            height: 0;
+            border-top: 1.5rem solid white;
+            border-left: 0.5rem solid transparent;
+            border-right: 0.5rem solid transparent;
         }
 
         h1 {
             text-align: center;
-            margin: 2rem auto;
+            margin: 2rem auto 1.5rem;
             font-size: 1.5rem;
         }
 
         .container {
-            font-size: 1rem;
             font-family: "Fira Code", serif;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            height: 16rem;
+            height: 100%;
+            font-size: 1.2rem;
         }
 
         .container > .item {
-            border-radius: 50%;
-            margin-top: 0.8rem;
-            background-color: #abc1d6;
+            margin-top: 0.5rem;
         }
 
         .container > .item > p {
@@ -45,11 +76,23 @@
     <div class="item">
         <p>1、本人携带1寸蓝底照片</p>
     </div>
+    <div class="arrow_fa">
+        <div class="rectangle"></div>
+        <div class="to_bottom"></div>
+    </div>
     <div class="item">
         <p>2、本人到中心楼806缴费</p>
     </div>
+    <div class="arrow_fa">
+        <div class="rectangle"></div>
+        <div class="to_bottom"></div>
+    </div>
     <div class="item">
         <p>3、是否需要办理火车优惠卡（学生证+火车优惠=27元/本，学生证20元/本）</p>
+    </div>
+    <div class="arrow_fa">
+        <div class="rectangle"></div>
+        <div class="to_bottom"></div>
     </div>
     <div class="item">
         <p>4、本人到中心楼806办理自领，或者统一在博华—221领取。</p>

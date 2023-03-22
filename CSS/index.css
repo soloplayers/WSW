@@ -73,18 +73,6 @@ th {
     padding: 0;
 }
 
-@media screen and (min-width: 1000px) {
-    body {
-        width: 80rem;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    body {
-        width: 25rem;
-    }
-}
-
 html {
     height: 100%;
 }
@@ -101,7 +89,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    height: 32rem;
+    height: 100%;
 }
 
 .container > div {
@@ -116,18 +104,13 @@ body {
 }
 
 .item2 > a {
-    border: 1px solid red;
     display: block;
     text-decoration: none;
     margin: 0.5rem auto;
-    width: 16rem;
+    width: 12rem;
     text-align: center;
     font-size: 1.2rem;
     color: white;
-}
-
-.item2 > a:visited {
-    text-decoration: none;
 }
 
 .item3 > p {

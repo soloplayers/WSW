@@ -6,25 +6,62 @@
           content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"/>
     <title>补办校园卡</title>
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html {
+            height: 100%;
+        }
+
+        body {
+            color: white;
+            background-image: url("../res/bg2.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
         h1 {
             text-align: center;
-            margin: 2rem auto;
+            margin: 2rem auto 1.5rem;
             font-size: 1.5rem;
         }
 
-        .container {
-            font-size: 1rem;
-            font-family: "Fira Code",serif;
+        .arrow_fa {
+            margin-top: 0.5rem;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            height: 6rem;
+        }
+
+        .rectangle {
+            width: 0.5rem;
+            height: 1rem;
+            background-color: white;
+            margin: 0 auto;
+        }
+
+        .to_bottom {
+            margin: 0 auto;
+            width: 0;
+            height: 0;
+            border-top: 1.2rem solid white;
+            border-left: 0.5rem solid transparent;
+            border-right: 0.5rem solid transparent;
+        }
+
+        .container {
+            font-size: 1.2rem;
+            font-family: "Fira Code", serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
         }
 
         .container > .item {
-            border-radius: 50%;
-            margin-top: 0.8rem;
-            background-color: #abc1d6;
+            margin-top: 0.5rem;
         }
 
         .container > .item > p {
@@ -37,6 +74,10 @@
 <div class="container">
     <div class="item">
         <p>1、申请教室人员至724服务中心提前进行报备</p>
+    </div>
+    <div class="arrow_fa">
+        <div class="rectangle"></div>
+        <div class="to_bottom"></div>
     </div>
     <div class="item">
         <p>2、724服务中心工作人员每周周一收齐报备单提交至代老师处审核</p>

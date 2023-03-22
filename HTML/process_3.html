@@ -3,28 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"/>
+          content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=1.0"/>
     <title>申请教室</title>
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html {
+            height: 100%;
+        }
+
+        body {
+            color: white;
+            background-image: url("../res/bg2.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
         h1 {
             text-align: center;
-            margin: 2rem auto;
+            margin: 1.5rem auto 1rem;
             font-size: 1.5rem;
+        }
+        .arrow_fa {
+            margin-top: 0.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .rectangle {
+            width: 0.5rem;
+            height: 1rem;
+            background-color: white;
+            margin: 0 auto;
+        }
+
+        .to_bottom {
+            margin: 0 auto;
+            width: 0;
+            height: 0;
+            border-top: 1.2rem solid white;
+            border-left: 0.5rem solid transparent;
+            border-right: 0.5rem solid transparent;
         }
 
         .container {
             font-size: 1.2rem;
-            font-family: "Fira Code",serif;
+            font-family: "Fira Code", serif;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            height: 16rem;
+            height: 100%;
+            margin-top: 0.2rem;
         }
 
         .container > .item {
-            border-radius: 50%;
-            margin-top: 0.8rem;
-            background-color: #abc1d6;
+            margin-top: 0.5rem;
         }
 
         .container > .item > p {
@@ -38,11 +75,23 @@
     <div class="item">
         <p>1、申请教室人员至724服务中心提前进行报备</p>
     </div>
+    <div class="arrow_fa">
+        <div class="rectangle"></div>
+        <div class="to_bottom"></div>
+    </div>
     <div class="item">
         <p>2、724服务中心工作人员每周周一收齐报备单提交至代老师处审核</p>
     </div>
+    <div class="arrow_fa">
+        <div class="rectangle"></div>
+        <div class="to_bottom"></div>
+    </div>
     <div class="item">
         <p>3、724服务中心工作人员将审核通过的报备单，送至辅导员处签字</p>
+    </div>
+    <div class="arrow_fa">
+        <div class="rectangle"></div>
+        <div class="to_bottom"></div>
     </div>
     <div class="item">
         <p>4、724服务中心工作人员反馈教室申请结果到各位申请者并通知领取报备单</p>

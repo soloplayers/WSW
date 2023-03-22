@@ -3,32 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"/>
+          content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=1.0"/>
     <title>应征入伍学费补偿表</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            height: 100%;
+        }
+
+        body {
+            color: white;
+            background-image: url("../res/bg2.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-color: #425f97;
+        }
+
         h1 {
             text-align: center;
-            margin: 2rem auto;
+            margin: 2rem auto 1rem;
             font-size: 1.5rem;
         }
 
-        .container {
-            font-size: 1rem;
-            font-family: "Fira Code", serif;
+        .arrow_fa {
+            margin-top: 0.5rem;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            height: 28rem;
+        }
+
+        .rectangle {
+            width: 0.5rem;
+            height: 1rem;
+            background-color: white;
+            margin: 0 auto;
+        }
+
+        .to_bottom {
+            margin: 0 auto;
+            width: 0;
+            height: 0;
+            border-top: 1rem solid white;
+            border-left: 0.5rem solid transparent;
+            border-right: 0.5rem solid transparent;
+        }
+
+        .container {
+            font-size: 1.1rem;
+            font-family: "Fira Code", serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            height: 100%;
         }
 
         .container > .item {
-            border-radius: 50%;
-            margin-top: 0.8rem;
-            background-color: #abc1d6;
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
         }
 
         .container > .item > p {
             text-align: center;
+        }
+
+        .container > .item > p > a {
+            color: inherit;
         }
     </style>
 </head>
@@ -36,22 +80,46 @@
 <h1>应征入伍学费补偿表流程</h1>
 <div class="container">
     <div class="item">
-        <p>1、学生在全国征兵网站下载《应征入伍学费补偿表》</p>
+        <p>1、学生在<a href="https://www.gfbzb.gov.cn/" target="_blank">全国征兵网站</a>下载《应征入伍学费补偿表》</p>
+    </div>
+    <div class="arrow_fa">
+        <div class="rectangle"></div>
+        <div class="to_bottom"></div>
     </div>
     <div class="item">
         <p>2、学生将填写完毕的补偿表交至724服务中心</p>
     </div>
+    <div class="arrow_fa">
+        <div class="rectangle"></div>
+        <div class="to_bottom"></div>
+    </div>
     <div class="item">
         <p>3、724服务中心工作人员收集学生补偿表并统一初审</p>
+    </div>
+    <div class="arrow_fa">
+        <div class="rectangle"></div>
+        <div class="to_bottom"></div>
     </div>
     <div class="item">
         <p>4、724服务中心工作人员将材料送达至辅导员处</p>
     </div>
+    <div class="arrow_fa">
+        <div class="rectangle"></div>
+        <div class="to_bottom"></div>
+    </div>
     <div class="item">
         <p>5、辅导员复核后通知工作人员领取并统一送达至社区资助负责人</p>
     </div>
+    <div class="arrow_fa">
+        <div class="rectangle"></div>
+        <div class="to_bottom"></div>
+    </div>
     <div class="item">
         <p>6、社区资助负责人统一交到中心楼805</p>
+    </div>
+    <div class="arrow_fa">
+        <div class="rectangle"></div>
+        <div class="to_bottom"></div>
     </div>
     <div class="item">
         <p>7、724服务中心工作人员联系办理学生，反馈成果</p>
