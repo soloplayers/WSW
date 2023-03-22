@@ -85,10 +85,16 @@ th {
     }
 }
 
+html {
+    height: 100%;
+}
 
 body {
     color: white;
-    background-color: #abc1d6;
+    background-image: url("../res/bg1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .container {
@@ -106,16 +112,26 @@ body {
     margin: 0 auto;
     width: fit-content;
     font-size: 1.3rem;
+    text-align: center;
 }
 
-.item2 > p {
+.item2 > a {
+    border: 1px solid red;
+    display: block;
+    text-decoration: none;
     margin: 0.5rem auto;
     width: 16rem;
     text-align: center;
     font-size: 1.2rem;
+    color: white;
+}
+
+.item2 > a:visited {
+    text-decoration: none;
 }
 
 .item3 > p {
     font-style: italic;
     font-size: inherit;
+    text-align: center;
 }
